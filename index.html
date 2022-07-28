@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>A Tiny Village</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>a tiny village</h1>
+      </header>
+
+      <p id="numHouses">A single house stands in the clearing.</p>
+      <p id="woodChopped">0 wood chopped</p>
+      <p id="stoneMined">0 stone mined</p>
+
+      <div class="main-game-menu">
+        <div class="buttons">
+          <div id="mountainsMenu">
+            <button onclick="chopWood()">Chop wood</button>
+            <button onclick="mineStone()">Mine stone</button>
+          </div>
+
+          <div id="villageMenu">
+            <button onclick="buildHouse()" id="buildHouses">
+              Build a house<br />Cost: 20 wood 10 stone
+            </button>
+          </div>
+
+          <div id="workshopMenu">
+            <button onclick="buyWoodPerClick()" id="perClickUpgradeAxe">
+              Upgrade axe (currently level 1) Cost: 10 wood
+            </button>
+            <button onclick="buyStonePerClick()" id="perClickUpgradePickaxe">
+              Upgrade pickace (currently level 1) Cost: 10 stone
+            </button>
+          </div>
+
+          <div id="navigateButtons">
+            <button class="mountains-button" onclick="tab('mountainsMenu')">
+              Go to the Mountains
+            </button>
+            <button class="village-button" onclick="tab('villageMenu')">
+              Go to the Village
+            </button>
+            <button class="workshop-button" onclick="tab('workshopMenu')">
+              Go to the Workshop
+            </button>
+            <button class="save-game-button" onclick="saveGame()">
+              Save Game
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" charset="utf-8" type="text/javascript"></script>
+  </body>
+</html>
