@@ -1,10 +1,38 @@
-# Incremental game
+# sv
 
-A simple incremental game called A Tiny Village. Currently written in HTML, CSS and vanilla JS.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-The basis of this game has been written following the tutorial by Reddit user YhvrTheSecond (https://www.reddit.com/r/incremental_games/comments/ahf6nx/how_to_make_an_incremental_game/). The game is being developed parallel to my computer science degree. As such, it will be expanded upon as I learn new stuff. The languages used may thus change during its development.
+## Creating a project
 
+If you're seeing this, you've probably already done this step. Congrats!
 
-# Contributions and suggestions
+```bash
+# create a new project in the current directory
+npx sv create
 
-Feel free to contribute or suggest stuff! The more you explain your contribution, the better. I am, after all, a student :)
+# create a new project in my-app
+npx sv create my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
