@@ -7,8 +7,17 @@
 	margin: 0;
 }
 
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+}
+
 body {
 	font-family: "Roboto Mono", monospace;
 	background-color: #212121;
 	color: #fff;
+	margin: 0;
+	line-height: 1.5;
 }
